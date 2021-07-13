@@ -11,6 +11,7 @@ body{
 .top-container{
     background-color: #4840b6;
     padding: 40px;
+    margin-bottom: 70px;
 }
 .header-manager{
     display: flex;
@@ -59,3 +60,45 @@ body{
 
 
  /* -----------Main part Start--------- */
+ .main-container{
+     display: flex;
+     /* justify-content: space-around; */
+     flex-direction: column;
+     align-items: center;
+ }
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 18px;
+ }
+ .article{
+    width: 300px;
+    height: 395px;
+    box-shadow: 2px 1px 4px gray;
+    padding: 15px;
+ }
+ .article-photo{
+    width: 300px;
+    height: 256px;
+ }
+ .article-info{
+    width: 300px;
+    height: 154px;
+ }
+ .article-info h3{
+    
+    font-weight: bold;
+    font-size: 26px;
+    color: rgb(8, 8, 8);
+    margin-bottom: 0;
+    margin-top: 8px;
+ }
+ .article-info p{
+    color: #6C6C6C;
+    font-size: 14px;
+    margin-top: 6px;
+    overflow: hidden;
+ }
+
+  /* -----Main-container 2nd part *----/
