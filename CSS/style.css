@@ -158,3 +158,104 @@ i {
   font-size: 20px;
   color: black;
 }
+
+/* ---------------media query--------------- */
+
+/* ------mobile device------- */
+
+@media only screen and (max-width: 600px) {
+  .top-container {
+    background-color: rgb(31, 18, 146);
+    width: 100%;
+    padding: 20px;
+  }
+  .header-manager {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    padding: 10px;
+  }
+  .heading-info h1 {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header-button {
+    background-color: rgb(219, 133, 20);
+    padding: 8px 14px;
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  .button-transfrom:hover .header-button {
+    transform: rotate(360deg) scale(1.21);
+    transition: transform 3s ease-in-out;
+  }
+  .banner img {
+    position: relative;
+    left: 0px;
+    top: 60px;
+    width: 100%;
+    height: 350px;
+  }
+  /* ------picture transition & transform ---------*/
+
+  .banner:hover .banner-pic {
+    transform: rotate(360deg) scale(0.75);
+    transition: transform 3s ease-in-out;
+  }
+
+  /* -----------Main part Start--------- */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px;
+  }
+
+  /* -----Main-container 2nd part -----------*/
+
+  .feedbacks {
+    display: block;
+    width: 100%;
+    box-shadow: 2px 1px 4px rgb(128, 118, 118);
+  }
+  .form-feedback {
+    padding: 20px;
+  }
+  .rating {
+    padding: 20px;
+  }
+  .same-design {
+    color: rgb(133, 90, 33);
+  }
+  .input-design {
+    border: 3px solid rgb(83, 69, 41);
+    padding: 5px;
+  }
+  .feedback-button {
+    background-color: rgb(30, 91, 151);
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 5px;
+  }
+  .fa-star.filled {
+    color: rgb(182, 164, 5);
+  }
+  .fa-star.unfilled {
+    color: rgb(170, 165, 165);
+  }
+  .special {
+    color: rgb(173, 114, 5);
+    font-size: 25px;
+  }
+}
